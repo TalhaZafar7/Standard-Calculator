@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:minHeight="250dp"
+    android:screenOrientation="portrait"
+    tools:context=".               "
+    tools:layout_editor_absoluteX="10dp"
+    tools:layout_editor_absoluteY="35dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout1Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout1Id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/hint"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1"
+            tools:ignore="MissingConstraints"
+            tools:targetApi="o" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2Id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout3ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout1Id"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/clearButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/clear"
+            android:textColor="#ff751a"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/divideButtonId"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/divideButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/divide"
+            android:textColor="#157958"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/clearButtonId"
+            app:layout_constraintRight_toLeftOf="@+id/multiplyButtonId"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/multiplyButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#e6e6e6"
+            android:text="@string/multiply"
+            android:textColor="#157958"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/divideButtonId"
+            app:layout_constraintRight_toLeftOf="@+id/minusButtonId"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/minusButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/minus"
+            android:textColor="#157958"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/multiplyButtonId"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3ID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout4ID"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2Id"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/oneButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#e6e6e6"
+            android:text="@string/one"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/twoButtonId"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3ID"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/twoButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/two"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/oneButtonId"
+            app:layout_constraintRight_toLeftOf="@id/threeButtonId"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3ID"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/threeButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/three"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/twoButtonId"
+            app:layout_constraintRight_toLeftOf="@+id/plusButtonId"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/plusButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/add"
+            android:textColor="#157958"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/threeButtonId"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4ID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout5ID"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout3ID"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/fourButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#e6e6e6"
+            android:text="@string/four"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/fiveButtonId"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout4ID"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/fiveButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/five"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/fourButtonId"
+            app:layout_constraintRight_toLeftOf="@id/sixButtonId"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout4ID"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/sixButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/six"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/fiveButtonId"
+            app:layout_constraintRight_toLeftOf="@+id/dotButtonId"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/dotButtonId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/dot"
+            android:textColor="#157958"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/sixButtonId"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout5ID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout6ID"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout4ID"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/sevenButtonID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#e6e6e6"
+            android:text="@string/seven"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/eightButtonID"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/eightButtonID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/eight"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/sevenButtonID"
+            app:layout_constraintRight_toLeftOf="@id/nineButtonID"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/nineButtonID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/nine"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/eightButtonID"
+            app:layout_constraintRight_toLeftOf="@+id/equalButtonID"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/equalButtonID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#157958"
+            android:text="@string/equal"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/nineButtonID"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout6ID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout5ID"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/historyBtnID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#e6e6e6"
+            android:text="@string/history"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/zeroBtnID"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/zeroBtnID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/zero"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/historyBtnID"
+            app:layout_constraintRight_toLeftOf="@id/btnMissing1ID"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/btnMissing1ID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/space"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/zeroBtnID"
+            app:layout_constraintRight_toLeftOf="@+id/btnMissing2ID"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/btnMissing2ID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#e6e6e6"
+            android:text="@string/space"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/btnMissing1ID"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="10dp" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
